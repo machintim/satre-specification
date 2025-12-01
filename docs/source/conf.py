@@ -63,9 +63,19 @@ templates_path = ["_templates"]
 
 html_theme = "sphinx_rtd_theme"
 
-# Add custom CSS
+# Theme options for logo
+html_theme_options = {
+    "logo_only": False,
+    "display_version": False,
+}
+
+# Logo configuration
+html_logo = "../images/SATRE_Stacked_Dark.png"
+
+# Add custom CSS and JavaScript
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
+html_js_files = ["custom.js"]
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
